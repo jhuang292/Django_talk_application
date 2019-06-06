@@ -1,0 +1,17 @@
+<html>
+<body bgcolor="">
+<p> hi there </p>
+<p> testing django templates and views </p>
+{% for post in posts  %}
+<div>
+<p>Published: {{post.published_date}}</p>
+<!--<h1><a href ="{% url 'post_details' post.id %}">{{post.title}}</a></h1> --> 
+<h1><a href ="#">{{post.title}}</a></h1>
+<p>{{post.text}}</p>
+</div>
+{% endfor %}
+for new post 
+click here..<h1><a href ="{% url 'post_new' %}">click here</a></h1>
+
+</body>
+</html>

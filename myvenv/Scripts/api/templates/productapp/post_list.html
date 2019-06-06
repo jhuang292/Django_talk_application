@@ -1,0 +1,24 @@
+<html>
+<body bgcolor="">
+<head>
+    <title> Index Page </title>
+</head>
+
+<h1> The Product Data Information is Post Here </h1>
+<p> The product information is the name with the published date </p>
+
+{% for product in posts  %}
+<div>
+<!--<h1><a href ="{% url 'post_details' product.id %}">{{post.title}}</a></h1> -->
+<p>{{Talk.talk_ID}}</p>
+<p>{{Talk.Name}}</p>
+<p>{{Talk.Speaker}}</p>
+<p>{{Talk.Venue}}</p>
+<p>{{Talk.Duration}}</p>
+</div>
+{% endfor %}
+<!-- for new post 
+click here..<h1><a href ="{% url 'post_new' %}">click here</a></h1>-->
+
+</body>
+</html>

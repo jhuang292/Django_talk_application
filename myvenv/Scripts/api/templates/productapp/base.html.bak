@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+<html>
+<body bgcolor="">
+<p> hi there </p>
+<p> testing django templates and views </p>
+{% for post in posts  %}
+<div>
+<p>Published: {{post.published_date}}</p>
+<h1><a href ="">{{post.title}}</a></h1>
+<p>{{post.text}}</p>
+</div>
+{% endfor %}
+</body>
+</html>

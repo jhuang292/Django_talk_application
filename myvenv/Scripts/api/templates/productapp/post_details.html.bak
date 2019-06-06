@@ -1,0 +1,11 @@
+<html lang="en">
+ <head>
+  <title>loading a post</title>
+ </head>
+ <body>
+<div>
+<p>Published: {{post.published_date}}</p>
+<h1><a href ="">{{post.title}}</a></h1>
+<p>{{post.text}}</p>
+</div> </body>
+</html>
