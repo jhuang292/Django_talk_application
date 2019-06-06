@@ -21,4 +21,5 @@ from django.conf.urls import include,url
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^talk/', views.TalkView.as_view()),
+    url(r'^talk/<int:pk>', views.SingleTalkView.as_view()),
 ]
